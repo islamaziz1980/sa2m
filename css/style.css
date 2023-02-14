@@ -2,7 +2,9 @@
 body{font-family: 'Tajawal', sans-serif; color:#6C727F; font-weight:400; font-size: 14px;}
 .donat-pr{ direction: rtl; margin-top: 20px; }
 .box-act { background: #FFF8F6; text-align: center;height: 250px;}
+.arab { direction: rtl;}
 .arob{ float: right !important;}
+.tioz { padding: 20px;}
 .carto {
     max-width: 150px;
     position: absolute;
@@ -62,7 +64,7 @@ label.familos{  margin-right: 44px;}
     font-weight: 700;
     line-height: 34px;
     padding: 0 2px;
-
+    width: 66%;
     text-align: center;
 }
 .plus {
@@ -97,7 +99,8 @@ font-size: 20px;
     border-radius: 9px;
     float: right;
   }
-.tot-don{ background: #FFF8F6; padding: 15px; color: #685A4D; font-size: 18px; font-weight: 700; border-radius: 16px;}
+  .tio { float: none; width: 30%;}
+.tot-don{ background: #FFF8F6; padding: 15px; color: #685A4D; font-size: 18px; font-weight: 700; border-radius: 16px;text-align: center;}
 .tot-don span{color: #87786C}
 
 /***********************Tabs ***********************/
@@ -173,6 +176,7 @@ font-size: 20px;
   padding: 0;
 	overflow: auto;
 }
+ul.onebil { overflow: visible;}
 
 ul.radoz li{
   color: #AAAAAA;
@@ -200,6 +204,7 @@ ul.radoz li label{
   z-index: 9;
   cursor: pointer;
   -webkit-transition: all 0.25s linear;
+  background-color: transparent;
 }
 
 ul.radoz li:hover label{
@@ -251,12 +256,96 @@ ul.radoz input[type=radio]:checked ~ label{
 }
 
 .v-rad,.k-rad,.a-rad {max-width: 63px;}
+/********* tab2 ********/
+.face-log,.goog-log { border-color: #F26530; color: #F26530; font-weight: 700;width: 35%}
+.face-log i { color: #0557e8; display: inline-flex; float: left;}
+.goog-log { margin-right: 15px;}
+.goog-log i {color: #fbbc05); display: inline-flex; float: left; }
+.line {
+  height: 2px;
+  background: #E6E1DE;
+  width: 20%;
+  margin: auto;
+  position: relative;
+  top: -27px;
+}
 
+h2.awo {
+  position: relative;
+/* top: 36px; */
+background: #FFF8F6;
+display: inline-block;
+padding: 0 20px;
+z-index: 1;
+}
+.rad-boz{
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%); }
+
+    .li-rad input[type=radio] {
+        margin-left: auto !important;
+        margin-right: -20px !important;
+    }
+    .radio-inline:last-child {
+    margin-right : 20px;
+    }
+    #c-but.col-md-offset-1{    margin-left: auto !important;    margin-right: 8.33333333%;border-color: #F26530;
+      color: #F26530;
+      font-size: 18px;
+      font-weight: 700;}
 /************reaponsive ************************/
-@media (min-width: 992px)
+
+@media only screen and (max-width: 1200px)
 {
-  #c-but.col-md-offset-1{    margin-left: auto !important;    margin-right: 8.33333333%border-color: #F26530;
-    color: #F26530;
-    font-size: 18px;
-    font-weight: 700;}
+  .box-buttonz {right: 7%;}
+}
+@media only screen and (max-width: 992px)
+{
+  .carto {margin-right: 37% !important;}
+  .box-buttonz {right: 22%;}
+  .box-formoz { margin-top: 25px;}
+  #c-but.col-md-offset-1{ margin-top: 15px;}
+    .count {width: 90%;}
+    ul.radoz li {width: 46%;}
+    .v-rad, .k-rad, .a-rad {  max-width: 100px;}
+    .form-group {margin-bottom: 20px;}
+}
+@media only screen and (max-width: 750px){
+
+  .count {width: 80%;}
+  ul.radoz li {width: 50%;}
+}
+@media only screen and (max-width: 570px)
+{
+  .carto {margin-right: 33% !important;}
+  .box-buttonz {right: 14%;}
+  .box-buttonz {font-size: 12px; font-weight: 700;}
+.goog-log i { display: block; margin: auto; float: none;}
+.face-log i { display: block; margin: auto; float: none;}
+  ul.radoz li {width: 70%;}
+}
+
+@media only screen and (max-width: 475px)
+{
+.box-buttonz {right: 8%;}
+.box-buttonz span {font-size: 9px;}
+.count {width: 70%;}
+ul.radoz li {width: 90%;}
+}
+@media only screen and (max-width: 375px)
+{
+  .panel-heading {font-size: 11px;}
+.box-buttonz {right: 8%;}
+.box-buttonz span {font-size: 0px;}
+ul.radoz li {width: 100%;}
 }
